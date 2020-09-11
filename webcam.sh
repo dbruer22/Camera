@@ -6,3 +6,4 @@ fswebcam -r 1280x720 --no-banner /home/pi/Camera/pics/$DATE.jpg
 
 git add *
 git commit
+git push origin master
