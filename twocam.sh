@@ -3,7 +3,7 @@
 DATE=$(date +"%Y-%m-%d_%H%M")
 
 ffmpeg -f video4linux2 -r 25 -s 640x480 -i /dev/video0 $DATE.mp4 \
-       -f video4linux2 -r 25 -s 640x480 -i /dev/video1 $DATE.mp4 \
+       -f video4linux2 -r 25 -s 640x480 -i /dev/video2 $DATE.mp4 \
        -map 0 camera1.webm \
        -map 1 camera2.webm
 
