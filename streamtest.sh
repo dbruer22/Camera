@@ -10,4 +10,4 @@ ffmpeg \
 -b:a 64k \
 -r 30 \
 -s 1920x1080 \
--f flv rtmp://a.rtmp.youtube.com/live2/uy16-g4ze-j95j-qtjm-2733
+-f flv rtmp://a.rtmp.youtube.com/live2/4t0b-pyas-g0zx-ybhm-fage
