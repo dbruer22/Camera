@@ -1,6 +1,6 @@
 ffmpeg \
 -thread_queue_size 1024 \
--thread_queue_size 512 \
+-thread_queue_size 512 \-i anullsrc=channel_layout=mono:sample_rate=44100 \
 -f v4l2 -i /dev/video0 \
 -c:v libx264 -pix_fmt yuv420p -preset ultrafast -g 8 -b:v 2500k -maxrate 2500k \
 -bufsize 32k -strict experimental \
@@ -10,4 +10,4 @@ ffmpeg \
 -b:a 64k \
 -r 30 \
 -s 1920x1080 \
--f flv rtmp://b.rtmp.youtube.com/live2?backup=1/uy16-g4ze-j95j-qtjm-2733
+-f flv rtmp://a.rtmp.youtube.com/live2/uy16-g4ze-j95j-qtjm-2733
