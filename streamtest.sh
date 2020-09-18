@@ -1,6 +1,7 @@
 ffmpeg \
 -thread_queue_size 1024 \
--thread_queue_size 512 \-i anullsrc=channel_layout=mono:sample_rate=44100 \
+-thread_queue_size 512 \
+-i anullsrc=channel_layout=mono:sample_rate=44100 \
 -f v4l2 -i /dev/video0 \
 -c:v libx264 -pix_fmt yuv420p -preset ultrafast -g 8 -b:v 2500k -maxrate 2500k \
 -bufsize 32k -strict experimental \
