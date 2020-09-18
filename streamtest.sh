@@ -3,7 +3,7 @@ ffmpeg \
 -f alsa -guess_layout_max 0 -i default:CARD=ConferenceCam \
 -thread_queue_size 512 \
 -f v4l2 -i /dev/video4 \
--c:v libx264 -pix_fmt yuv420p -preset normal -g 8 -b:v 2500k -maxrate 2500k \
+-c:v libx264 -pix_fmt yuv420p -preset ultrafast -g 8 -b:v 2500k -maxrate 2500k \
 -bufsize 32k -strict experimental \
 -acodec libmp3lame -ar 44100 \
 -threads 4 -q:v 5 \
