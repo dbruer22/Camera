@@ -1,5 +1,6 @@
 ffmpeg \
 -thread_queue_size 1024 \
+-f alsa -guess_layout_max 0 -i default:1=Microphone \
 -thread_queue_size 512 \
 -f v4l2 -i /dev/video4 \
 -c:v libx264 -pix_fmt yuv420p -preset ultrafast -g 8 -b:v 2500k -maxrate 2500k \
@@ -10,4 +11,4 @@ ffmpeg \
 -b:a 64k \
 -r 30 \
 -s 1920x1080 \
--f flv rtmp://a.rtmp.youtube.com/live2/4t0b-pyas-g0zx-ybhm-fage
+-f flv rtmp://a.rtmp.youtube.com/live2/uy16-g4ze-j95j-qtjm-2733
