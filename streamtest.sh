@@ -10,5 +10,5 @@ ffmpeg \
 -q:a 5 \
 -b:a 64k \
 -r 30 \
--s 1920x1080 \
+-s 1024×576 \
 -f flv rtmp://a.rtmp.youtube.com/live2/uy16-g4ze-j95j-qtjm-2733
