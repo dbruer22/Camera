@@ -1,5 +1,5 @@
 ffmpeg \
--thread_queue_size 4000 \
+-thread_queue_size 1536 \
 -f alsa -guess_layout_max 0 -i default:CARD=ConferenceCam \
 -thread_queue_size 512 \
 -f v4l2 -i /dev/video4 \
