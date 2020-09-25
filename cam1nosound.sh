@@ -1,7 +1,7 @@
 -i anullsrc=channel_layout=stereo:sample_rate=44100
 
 ffmpeg \
--f alsa -i default:anullsrc=channel_layout=stereo:sample_rate=44100 \
+-f alsa -i anullsrc=r=48000:cl=4 \
 -f v4l2 -i /dev/video0 \
 -c:v libx264 -pix_fmt yuv420p -preset ultrafast -g 10 -b:v 1200 \
 -bufsize 512k \
