@@ -1,5 +1,5 @@
 ffmpeg \
--f alsa -i plughw:CARD=U0x46d0x825,DEV=0 \
+-f alsa -guess_layout_max 0 -i default:CARD=ConferenceCam \
 -f v4l2 -i /dev/video2 \
 -c:v libx264 -pix_fmt yuv420p -preset ultrafast -g 10 -b:v 1200 \
 -bufsize 512k \
